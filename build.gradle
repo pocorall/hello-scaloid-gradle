@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "http://saturday06.github.io/gradle-android-scala-plugin/repository/snapshot"
+        }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:0.12.2"
+        classpath "jp.leafytree.gradle:gradle-android-scala-plugin:1.0-SNAPSHOT"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: "com.android.application"
+apply plugin: "android-scala"
+
+android {
+    compileSdkVersion "android-10"
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 10
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            runProguard true
+            proguardFile file("proguard-rules.txt")
+        }
+
+        release {
+            runProguard true
+            proguardFile file("proguard-rules.txt")
+        }
+    }
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library:2.11.2"
+	compile "org.scaloid:scaloid_2.11:3.5-10+"
+}
