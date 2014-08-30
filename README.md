@@ -23,4 +23,3 @@ Further Reading
 ---------------
 - [Scaloid](https://github.com/pocorall/scaloid)
 - [Scaloid APIdemos](https://github.com/pocorall/scaloid-apidemos)
-- [Android SDK plugin for sbt](https://github.com/pfn/android-sdk-plugin)
