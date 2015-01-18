@@ -1,13 +1,10 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven {
-            url "http://saturday06.github.io/gradle-android-scala-plugin/repository/snapshot"
-        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:0.12.2"
-        classpath "jp.leafytree.gradle:gradle-android-scala-plugin:1.0-SNAPSHOT"
+        classpath "jp.leafytree.gradle:gradle-android-scala-plugin:1.0"
     }
 }
 
@@ -20,7 +17,7 @@ apply plugin: "android-scala"
 
 android {
     compileSdkVersion "android-10"
-    buildToolsVersion "20.0.0"
+    buildToolsVersion "21.1.2"
     defaultConfig {
         minSdkVersion 10
         targetSdkVersion 10
@@ -42,6 +39,6 @@ android {
 }
 
 dependencies {
-    compile "org.scala-lang:scala-library:2.11.2"
-	compile "org.scaloid:scaloid_2.11:3.5-10+"
+    compile "org.scala-lang:scala-library:2.11.5"
+	compile "org.scaloid:scaloid_2.11:3.6.1-10+"
 }
