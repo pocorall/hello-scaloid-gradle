@@ -7,7 +7,7 @@ This contains minimum code as possible; therefore easy to run, examine and exten
 Prerequisites
 -------------
 * Android SDK Level 10
-* Android build tool 21.1.2
+* Android build tool 22
 
 Build
 -----
