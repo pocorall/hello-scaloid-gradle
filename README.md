@@ -6,8 +6,9 @@ This contains minimum code as possible; therefore easy to run, examine and exten
 
 Prerequisites
 -------------
-* Android SDK Level 10
-* Android build tool 22
+* Android build tool 22.0.1
+* Android SDK Level 16
+ - Level 16 is required for building, while this app retains runtime compatibility from API Level 10. Please refer to `minSdkVersion` property in `build.gradle`
 
 Build
 -----
