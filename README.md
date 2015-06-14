@@ -20,6 +20,12 @@ This will compile the project and generate an APK.
 
 For more command, refer to [gradle-android-scala-plugin](https://github.com/saturday06/gradle-android-scala-plugin).
 
+Is the build too slow?
+----------------------
+This maven project works completely. But long build time would matter, which usually takes more than 40 seconds.
+We recommend to [build your project with sbt](https://github.com/pocorall/hello-scaloid-sbt), which enables incremental build.
+This usually takes only several seconds.
+
 Further Reading
 ---------------
 - [Scaloid](https://github.com/pocorall/scaloid)
